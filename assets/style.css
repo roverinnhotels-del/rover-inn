@@ -116,3 +116,50 @@ nav ul li a:hover{
 .btn:hover{
     background:#b89428;
 }
+
+.about{
+
+padding:100px 0;
+background:#fff;
+
+}
+
+.about-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.subtitle{
+
+color:#d4af37;
+font-weight:700;
+letter-spacing:2px;
+
+}
+
+.about-content h2{
+
+font-size:42px;
+margin:15px 0 25px;
+
+}
+
+.about-content p{
+
+margin-bottom:20px;
+font-size:18px;
+color:#555;
+
+}
