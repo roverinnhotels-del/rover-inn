@@ -453,3 +453,44 @@ transition:.3s;
 transform:scale(1.1);
 
 }
+
+
+.page-banner{
+
+margin-top:80px;
+padding:100px 0;
+background:#111;
+color:#fff;
+text-align:center;
+
+}
+
+.page-banner h1{
+
+font-size:52px;
+margin-bottom:15px;
+
+}
+
+.about-page{
+
+padding:100px 0;
+background:#fff;
+
+}
+
+.about-page h2{
+
+font-size:34px;
+margin:40px 0 20px;
+color:#222;
+
+}
+
+.about-page p{
+
+font-size:18px;
+color:#555;
+margin-bottom:20px;
+
+}
