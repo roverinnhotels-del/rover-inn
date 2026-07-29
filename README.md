@@ -2,7 +2,7 @@
 
 ## Luxury Serviced Apartments & Premium Stays
 
-Welcome to **ROVER INN**, the flagship hospitality brand of **Shandilyya Hotels**.
+Welcome to **ROVER INN**, the flagship hospitality brand of **Shandilya Hotels**.
 
 ROVER INN offers luxury serviced apartments designed for business travelers, families, and long-stay guests.
 
@@ -31,7 +31,7 @@ https://shandilyahotelsworld.com# ROVER INN
 
 ## Luxury Serviced Apartments & Premium Stays
 
-Welcome to **ROVER INN**, the flagship hospitality brand of **Shandilyya Hotels**.
+Welcome to **ROVER INN**, the flagship hospitality brand of **Shandilya Hotels**.
 
 ROVER INN offers luxury serviced apartments designed for business travelers, families, and long-stay guests.
 
