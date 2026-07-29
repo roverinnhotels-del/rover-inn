@@ -14,6 +14,7 @@ content="Explore the gallery of ROVER INN Luxury Serviced Apartments by Shandily
 <link rel="stylesheet" href="assets/style.css">
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
 
 </head>
 
@@ -68,47 +69,111 @@ Discover Luxury Spaces & Premium Hospitality
 <div class="gallery-grid">
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900" alt="Luxury Hotel">
-<div class="gallery-overlay">
-<h3>Luxury Hotel</h3>
+
+    <a href="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600"
+       data-fancybox="gallery"
+       data-caption="Luxury Hotel">
+
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900"
+             alt="Luxury Hotel">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Luxury Hotel</h3>
+    </div>
+
 </div>
-</div>
+
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900" alt="Luxury Room">
-<div class="gallery-overlay">
-<h3>Luxury Room</h3>
+
+    <a href="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1600"
+       data-fancybox="gallery"
+       data-caption="Luxury Room">
+
+        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900"
+             alt="Luxury Room">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Luxury Room</h3>
+    </div>
+
 </div>
-</div>
+
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900" alt="Serviced Apartment">
-<div class="gallery-overlay">
-<h3>Serviced Apartment</h3>
+
+    <a href="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1600"
+       data-fancybox="gallery"
+       data-caption="Serviced Apartment">
+
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900"
+             alt="Serviced Apartment">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Serviced Apartment</h3>
+    </div>
+
 </div>
-</div>
+
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900" alt="Premium Interior">
-<div class="gallery-overlay">
-<h3>Premium Interior</h3>
+
+    <a href="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600"
+       data-fancybox="gallery"
+       data-caption="Premium Interior">
+
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900"
+             alt="Premium Interior">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Premium Interior</h3>
+    </div>
+
 </div>
-</div>
+
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900" alt="Luxury Bedroom">
-<div class="gallery-overlay">
-<h3>Luxury Bedroom</h3>
+
+    <a href="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600"
+       data-fancybox="gallery"
+       data-caption="Luxury Bedroom">
+
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900"
+             alt="Luxury Bedroom">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Luxury Bedroom</h3>
+    </div>
+
 </div>
-</div>
+
 
 <div class="gallery-item">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900" alt="Premium Stay">
-<div class="gallery-overlay">
-<h3>Premium Stay</h3>
-</div>
-</div>
 
+    <a href="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600"
+       data-fancybox="gallery"
+       data-caption="Premium Stay">
+
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900"
+             alt="Premium Stay">
+
+    </a>
+
+    <div class="gallery-overlay">
+        <h3>Premium Stay</h3>
+    </div>
+
+</div>
 </div>
 
 </div>
@@ -131,6 +196,22 @@ Discover Luxury Spaces & Premium Hospitality
 AOS.init({
 duration:1000,
 once:true
+});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+Fancybox.bind("[data-fancybox='gallery']",{
+    Thumbs:false,
+    Toolbar:{
+        display:[
+            "close",
+            "zoom",
+            "fullscreen",
+            "slideshow"
+        ]
+    }
 });
 </script>
 
