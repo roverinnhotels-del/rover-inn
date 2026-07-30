@@ -476,6 +476,7 @@ animation:whatsappEntry .8s ease forwards, whatsappPulse 2s 1s infinite;
 .whatsapp i{
 
     font-size:38px;
+    transition:.35s ease;
 
 }
 
@@ -484,6 +485,12 @@ animation:whatsappEntry .8s ease forwards, whatsappPulse 2s 1s infinite;
     transform:translateX(0) scale(1.12);
 
     box-shadow:0 18px 45px rgba(37,211,102,.65);
+
+}
+
+.whatsapp:hover i{
+
+    transform:rotate(15deg);
 
 }
 
@@ -582,6 +589,56 @@ animation:whatsappEntry .8s ease forwards, whatsappPulse 2s 1s infinite;
     visibility:visible;
 
     transform:translateX(0);
+
+}
+
+/* ==========================
+   WHATSAPP RIPPLE EFFECT
+========================== */
+
+.whatsapp::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    background:rgba(37,211,102,.35);
+
+    z-index:-1;
+
+    animation:waRipple 2s infinite;
+
+}
+
+@keyframes waRipple{
+
+0%{
+
+    transform:scale(1);
+
+    opacity:.8;
+
+}
+
+70%{
+
+    transform:scale(1.8);
+
+    opacity:0;
+
+}
+
+100%{
+
+    transform:scale(1.8);
+
+    opacity:0;
+
+}
 
 }
 
