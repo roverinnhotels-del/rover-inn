@@ -506,6 +506,8 @@ AOS.init({
     </div>
 </div>
 
+  <div id="progress-bar"></div>
+
   <script>
 
 window.addEventListener("load",()=>{
@@ -515,6 +517,22 @@ setTimeout(()=>{
 document.getElementById("preloader").classList.add("hide");
 
 },1200);
+
+});
+
+</script>
+
+  <script>
+
+window.addEventListener("scroll",()=>{
+
+const scrollTop=window.scrollY;
+
+const docHeight=document.documentElement.scrollHeight-window.innerHeight;
+
+const scrollPercent=(scrollTop/docHeight)*100;
+
+document.getElementById("progress-bar").style.width=scrollPercent+"%";
 
 });
 
