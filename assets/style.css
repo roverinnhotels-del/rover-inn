@@ -461,9 +461,11 @@ transition:.3s;
 }
 
 .whatsapp:hover{
+    transform:scale(1.12);
+}
 
-transform:scale(1.1);
-
+.whatsapp i{
+    font-size:34px;
 }
 
 
