@@ -652,3 +652,16 @@ transform:translateY(0);
 }
 
 }
+
+/* ===== SCROLL PROGRESS BAR ===== */
+
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:4px;
+    background:linear-gradient(90deg,#d4af37,#f5d76e);
+    z-index:999999;
+    transition:width .15s linear;
+}
