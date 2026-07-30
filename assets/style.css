@@ -642,6 +642,53 @@ animation:whatsappEntry .8s ease forwards, whatsappPulse 2s 1s infinite;
 
 }
 
+/* ==========================
+   WHATSAPP BOUNCE
+========================== */
+
+.wa-bounce{
+
+    animation:
+    whatsappEntry .8s ease forwards,
+    whatsappPulse 2s 1s infinite,
+    waBounce .7s ease;
+
+}
+
+@keyframes waBounce{
+
+0%{
+
+    transform:translateY(0);
+
+}
+
+25%{
+
+    transform:translateY(-12px);
+
+}
+
+50%{
+
+    transform:translateY(0);
+
+}
+
+75%{
+
+    transform:translateY(-6px);
+
+}
+
+100%{
+
+    transform:translateY(0);
+
+}
+
+}
+
 @media(max-width:768px){
 
 .whatsapp{
