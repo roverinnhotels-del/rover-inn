@@ -317,6 +317,26 @@ document.querySelectorAll("nav a").forEach(link => {
         
 </script>
 
+    <script>
+
+let waAnimated = false;
+
+window.addEventListener("scroll",()=>{
+
+    if(waAnimated) return;
+
+    if(window.scrollY > 150){
+
+        document.querySelector(".whatsapp").classList.add("wa-bounce");
+
+        waAnimated = true;
+
+    }
+
+});
+
+</script>
+
 </body>
 
 </html>
