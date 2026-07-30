@@ -267,12 +267,16 @@ function closeMenu() {
 
 menuToggle.addEventListener("click", () => {
 
-    nav.classList.toggle("active");
-
     if (nav.classList.contains("active")) {
-        menuToggle.innerHTML = "✕";
+
+        nav.classList.remove("active");
+        menuToggle.textContent = "☰";
+
     } else {
-        menuToggle.innerHTML = "☰";
+
+        nav.classList.add("active");
+        menuToggle.textContent = "✕";
+
     }
 
 });
