@@ -583,49 +583,46 @@ behavior:"smooth"
 const menuToggle = document.getElementById("menuToggle");
 const nav = document.querySelector("nav");
 
-function closeMenu() {
-    nav.classList.remove("active");
-    menuToggle.innerHTML = "☰";
-}
+menuToggle.addEventListener("click", function () {
 
-menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("active");
 
-    if (nav.classList.contains("active")) {
+    if (isOpen) {
 
-        nav.classList.remove("active");
-        menuToggle.textContent = "☰";
+        menuToggle.textContent = "✕";
+        menuToggle.style.transform = "rotate(180deg)";
+        menuToggle.style.color = "#d4af37";
 
     } else {
 
-        nav.classList.add("active");
-        menuToggle.textContent = "✕";
+        menuToggle.style.transform = "rotate(0deg)";
+        menuToggle.style.color = "#ffffff";
+
+        setTimeout(() => {
+            menuToggle.textContent = "☰";
+        }, 250);
 
     }
 
 });
 
-// Link click
 document.querySelectorAll("nav a").forEach(link => {
 
     link.addEventListener("click", () => {
-        closeMenu();
+
+        nav.classList.remove("active");
+
+        menuToggle.style.transform = "rotate(0deg)";
+        menuToggle.style.color = "#ffffff";
+
+        setTimeout(() => {
+            menuToggle.textContent = "☰";
+        }, 250);
+
     });
 
 });
-</script>
-
-  <script>
-
-document.querySelectorAll("nav a").forEach(link=>{
-
-link.addEventListener("click",()=>{
-
-nav.classList.remove("active");
-
-});
-
-});
-
+    
 </script>
 
 </body>
