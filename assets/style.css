@@ -939,12 +939,14 @@ nav ul li a{
     height:70px;
     width:auto;
     margin-bottom:20px;
+    margin-top:-8px;
 }
 
 @media(max-width:768px){
 
 .footer-logo img{
     margin:0 auto 20px;
+    margin-top:-8px;
 }
 
 }
