@@ -715,3 +715,128 @@ transform:translateY(0);
     visibility:visible;
 
 }
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+.container{
+    width:92%;
+}
+
+/* Header */
+
+.navbar{
+    height:70px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+/* Hero */
+
+.hero{
+    height:85vh;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:16px;
+    padding:0 10px;
+}
+
+.btn{
+    padding:14px 28px;
+}
+
+/* About */
+
+.about{
+    padding:70px 0;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.about-content{
+    text-align:center;
+}
+
+.about-content h2{
+    font-size:34px;
+}
+
+.about-content p{
+    font-size:16px;
+}
+
+/* Amenities */
+
+#amenities{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+/* Why Choose */
+
+.why-choose{
+    padding:70px 0;
+}
+
+.section-heading h2{
+    font-size:34px;
+}
+
+/* Gallery */
+
+.gallery,
+.gallery-page{
+    padding:70px 0;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:70px 0;
+}
+
+/* Footer */
+
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+/* Buttons */
+
+.whatsapp{
+    width:58px;
+    height:58px;
+    font-size:28px;
+}
+
+#backToTop{
+    width:50px;
+    height:50px;
+    left:18px;
+    bottom:20px;
+}
+
+}
