@@ -65,30 +65,100 @@ href="https://roverinnhotels-del.github.io/rover-inn/">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Hotel",
+  "@graph":[
 
-  "name":"ROVER INN",
-
-  "url":"https://roverinnhotels-del.github.io/rover-inn/",
-
-  "description":"Luxury serviced apartments by Shandilyya Hotels in Gurugram offering premium stays and modern hospitality.",
-
-  "brand":{
-      "@type":"Brand",
-      "name":"ROVER INN"
-  },
-
-  "parentOrganization":{
+    {
       "@type":"Organization",
-      "name":"Shandilyya Hotels"
-  },
+      "@id":"https://roverinnhotels-del.github.io/rover-inn/#organization",
+      "name":"Shandilyya Hotels",
+      "url":"https://shandilyahotelsworld.com/",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://roverinnhotels-del.github.io/rover-inn/assets/logo.png"
+      },
+      "email":"mailto:shandilyahotels@gmail.com",
+      "telephone":"+91 8595059315"
+    },
 
-  "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Gurugram",
-      "addressRegion":"Haryana",
-      "addressCountry":"IN"
-  }
+    {
+      "@type":"WebSite",
+      "@id":"https://roverinnhotels-del.github.io/rover-inn/#website",
+      "url":"https://roverinnhotels-del.github.io/rover-inn/",
+      "name":"ROVER INN",
+      "publisher":{
+        "@id":"https://roverinnhotels-del.github.io/rover-inn/#organization"
+      },
+      "inLanguage":"en-IN"
+    },
+
+    {
+      "@type":"Hotel",
+      "@id":"https://roverinnhotels-del.github.io/rover-inn/#hotel",
+      "name":"ROVER INN",
+      "url":"https://roverinnhotels-del.github.io/rover-inn/",
+      "mainEntityOfPage":"https://roverinnhotels-del.github.io/rover-inn/",
+      "description":"Luxury serviced apartments in Gurugram by Shandilyya Hotels offering premium accommodation for business travellers, families and long-term stays.",
+
+      "image":"https://shandilyahotelsworld.com/wp-content/uploads/2026/07/bedroom_1600x1000.png",
+
+      "logo":"https://roverinnhotels-del.github.io/rover-inn/assets/logo.png",
+
+      "telephone":"+91 8595059315",
+
+      "email":"mailto:shandilyahotels@gmail.com",
+
+      "priceRange":"₹3000+",
+
+      "checkinTime":"14:00",
+
+      "checkoutTime":"11:00",
+
+      "currenciesAccepted":"INR",
+
+      "paymentAccepted":"Cash, Credit Card, Debit Card, UPI",
+
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"M3M Myden, Golf Course Extension Road, Ramgarh",
+        "addressLocality":"Gurugram",
+        "addressRegion":"Haryana",
+        "postalCode":"122101",
+        "addressCountry":"IN"
+      },
+
+      "amenityFeature":[
+        {
+          "@type":"LocationFeatureSpecification",
+          "name":"Free WiFi",
+          "value":true
+        },
+        {
+          "@type":"LocationFeatureSpecification",
+          "name":"Parking",
+          "value":true
+        },
+        {
+          "@type":"LocationFeatureSpecification",
+          "name":"Housekeeping",
+          "value":true
+        },
+        {
+          "@type":"LocationFeatureSpecification",
+          "name":"24x7 Security",
+          "value":true
+        },
+        {
+          "@type":"LocationFeatureSpecification",
+          "name":"Smart TV",
+          "value":true
+        }
+      ],
+
+      "parentOrganization":{
+        "@id":"https://roverinnhotels-del.github.io/rover-inn/#organization"
+      }
+    }
+  ]
 }
 </script>
 
