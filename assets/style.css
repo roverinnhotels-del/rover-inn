@@ -71,7 +71,7 @@ nav ul li a:hover{
     height:calc(100vh - 80px);
 
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)),
     url("ChatGPT Image Jul 15, 2026, 02_21_45 PM.png");
 
     background-size:cover;
