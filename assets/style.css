@@ -899,3 +899,18 @@ nav ul li a{
 }
 
 }
+
+
+.menu-toggle{
+    display:none;
+    font-size:34px;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s ease;
+    user-select:none;
+}
+
+.menu-toggle:hover{
+    color:#d4af37;
+    transform:rotate(90deg);
+}
