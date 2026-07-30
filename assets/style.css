@@ -672,7 +672,7 @@ transform:translateY(0);
 #backToTop{
     position:fixed;
     bottom:30px;
-    right:30px;
+    left:30px;
     width:55px;
     height:55px;
 
