@@ -468,6 +468,9 @@ color:#444;
 
     transition:.35s ease;
 
+    opacity:0;
+animation:whatsappEntry .8s ease forwards, whatsappPulse 2s 1s infinite;
+
 }
 
 .whatsapp i{
@@ -478,7 +481,7 @@ color:#444;
 
 .whatsapp:hover{
 
-    transform:scale(1.12);
+    transform:translateX(0) scale(1.12);
 
     box-shadow:0 18px 45px rgba(37,211,102,.65);
 
@@ -512,6 +515,76 @@ color:#444;
 
 }
 
+@keyframes whatsappEntry{
+
+0%{
+    opacity:0;
+    transform:translateX(80px) scale(.8);
+}
+
+100%{
+    opacity:1;
+    transform:translateX(0) scale(1);
+}
+
+}
+
+/* ==========================
+   WHATSAPP TOOLTIP
+========================== */
+
+.whatsapp{
+
+    overflow:visible;
+
+}
+
+.wa-tooltip{
+
+    position:absolute;
+
+    right:80px;
+
+    white-space:nowrap;
+
+    background:rgba(17,17,17,.92);
+
+    color:#fff;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateX(10px);
+
+    transition:.35s ease;
+
+    pointer-events:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.whatsapp:hover .wa-tooltip{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateX(0);
+
+}
+
 @media(max-width:768px){
 
 .whatsapp{
@@ -529,6 +602,13 @@ color:#444;
     font-size:34px;
 
 }
+
+.wa-tooltip{
+
+    display:none;
+
+}
+
 
 }
 
