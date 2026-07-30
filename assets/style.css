@@ -913,3 +913,24 @@ nav ul li a{
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+
+.logo img{
+    height:52px;
+    width:auto;
+    display:block;
+    transition:.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
+
+@media(max-width:768px){
+
+.logo img{
+    height:42px;
+}
+
+}
