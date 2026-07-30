@@ -160,25 +160,28 @@ behavior:"smooth"
 const menuToggle = document.getElementById("menuToggle");
 const nav = document.querySelector("nav");
 
+function closeMenu() {
+    nav.classList.remove("active");
+    menuToggle.innerHTML = "☰";
+}
+
 menuToggle.addEventListener("click", () => {
 
     nav.classList.toggle("active");
 
-    if(nav.classList.contains("active")){
+    if (nav.classList.contains("active")) {
         menuToggle.innerHTML = "✕";
-    }else{
+    } else {
         menuToggle.innerHTML = "☰";
     }
 
 });
 
+// Link click
 document.querySelectorAll("nav a").forEach(link => {
 
     link.addEventListener("click", () => {
-
-        nav.classList.remove("active");
-        menuToggle.innerHTML = "☰";
-
+        closeMenu();
     });
 
 });
