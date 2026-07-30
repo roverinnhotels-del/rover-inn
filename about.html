@@ -27,6 +27,8 @@ ROVER INN
 
 <nav>
 
+  <ul id="navMenu">
+
 <ul>
 
 <li><a href="index.html">Home</a></li>
@@ -40,6 +42,10 @@ ROVER INN
 </ul>
 
 </nav>
+
+  <div class="menu-toggle" id="menuToggle">
+    ☰
+</div>
 
 </div>
 
@@ -159,6 +165,34 @@ window.scrollTo({
 top:0,
 
 behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+  <script>
+
+const menuToggle=document.getElementById("menuToggle");
+
+const nav=document.querySelector("nav");
+
+menuToggle.addEventListener("click",()=>{
+
+nav.classList.toggle("active");
+
+});
+
+</script>
+
+  <script>
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+nav.classList.remove("active");
 
 });
 
