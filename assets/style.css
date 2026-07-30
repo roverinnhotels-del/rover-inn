@@ -934,3 +934,17 @@ nav ul li a{
 }
 
 }
+
+.footer-logo img{
+    height:70px;
+    width:auto;
+    margin-bottom:20px;
+}
+
+@media(max-width:768px){
+
+.footer-logo img{
+    margin:0 auto 20px;
+}
+
+}
